@@ -1,5 +1,5 @@
 # Folder Structure
-
+```plaintext
 Documentaion_Root
 ├── Shared/
 │   ├── Standards/               ← Coding, naming, logging, security standards
@@ -29,7 +29,7 @@ Documentaion_Root
 |            ├──  05_Status_Reports/         ← Weekly updates, RAID logs, meeting minutes, change logs
 |            └──  _Related_Applications.md   ← 
     
-
+```plaintext
 
 # Folder Functions and example files
 
