@@ -3,7 +3,6 @@
 Documentaion_Root
 ├── Shared/
 │   ├── Standards/               ← Coding, naming, logging, security standards
-|
 │   ├── Templates/               ← Document templates (design, test plans, etc.)
 │   ├── Tools/                   ← Shared scripts, utilities, DevOps tools
 │   └── Governance/              ← Architecture review process, decision logs
@@ -12,23 +11,23 @@ Documentaion_Root
 │   ├──...   
 │
 │   ├── Projects/
-        └── SAP_Update/
-            ├── 01_Project_Charter/         ← Project scope, objectives, stakeholders, governance
-            ├── 02_BRD/                     ← Business requirements, process maps, gap analysis
-            ├── 03_SOW/                     ← Deliverables, timelines, resource plans, contracts
-            ├── 04_Technical_Impacts/       ← App-specific technical changes driven by the project
-            │   ├── App_1/                    ← Technical changes related to the OAB application
-            │   │   ├── Design_Changes/         ← Updated architecture, UI, or logic designs
-            │   │   ├── Integration_Updates/    ← API changes, data flows, third-party integrations
-            │   │   └── Test_Artifacts/         ← Test cases, test data, and results for OAB
-            │   ├── App_2/             ← Technical changes related to the MSC_Calls application
-            │   │   ├── Design_Changes/         ← UI or logic updates specific to MSC_Calls
-            │   │   └── Test_Artifacts/         ← Regression or functional test results
-            │   └── App_3/         ← Technical changes related to OnlineBooking application
-            │       ├── API_Changes/           ← New or modified API specifications
-            │       └── Deployment_Notes/      ← Environment-specific deployment instructions
-            ├──  05_Status_Reports/         ← Weekly updates, RAID logs, meeting minutes, change logs
-            └──  _Related_Applications.md   ← 
+│        └── SAP_Update/
+|            ├── 01_Project_Charter/         ← Project scope, objectives, stakeholders, governance
+|            ├── 02_BRD/                     ← Business requirements, process maps, gap analysis
+|            ├── 03_SOW/                     ← Deliverables, timelines, resource plans, contracts
+|            ├── 04_Technical_Impacts/       ← App-specific technical changes driven by the project
+|            │   ├── App_1/                    ← Technical changes related to the OAB application
+|            │   │   ├── Design_Changes/         ← Updated architecture, UI, or logic designs
+|            │   │   ├── Integration_Updates/    ← API changes, data flows, third-party integrations
+|            │   │   └── Test_Artifacts/         ← Test cases, test data, and results for OAB
+|            │   ├── App_2/             ← Technical changes related to the MSC_Calls application
+|            │   │   ├── Design_Changes/         ← UI or logic updates specific to MSC_Calls
+|            │   │   └── Test_Artifacts/         ← Regression or functional test results
+|            │   └── App_3/         ← Technical changes related to OnlineBooking application
+|            │       ├── API_Changes/           ← New or modified API specifications
+|            │       └── Deployment_Notes/      ← Environment-specific deployment instructions
+|            ├──  05_Status_Reports/         ← Weekly updates, RAID logs, meeting minutes, change logs
+|            └──  _Related_Applications.md   ← 
     
 
 
