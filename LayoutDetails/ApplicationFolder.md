@@ -1,6 +1,6 @@
 # Folder Structure
 
-
+```plaintext
 Documentaion_Root
 ├── Shared/
 │   ├── Standards/               ← Coding, naming, logging, security standards
@@ -83,6 +83,7 @@ Documentaion_Root
 │   |
 │   ├── Version_History.md          ← NEW: Summary of changes per version
 │   └── impacted_by_projects.md     ← NEW: List of projects that modified OAB
+```
 
 # Folder Functions and example files
 
