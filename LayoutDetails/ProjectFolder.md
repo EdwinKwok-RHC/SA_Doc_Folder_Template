@@ -3,6 +3,7 @@
 Documentaion_Root
 ├── Shared/
 │   ├── Standards/               ← Coding, naming, logging, security standards
+|
 │   ├── Templates/               ← Document templates (design, test plans, etc.)
 │   ├── Tools/                   ← Shared scripts, utilities, DevOps tools
 │   └── Governance/              ← Architecture review process, decision logs
