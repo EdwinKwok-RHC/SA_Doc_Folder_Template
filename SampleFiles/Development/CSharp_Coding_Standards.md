@@ -127,3 +127,172 @@ public class Person
 }
 ```
 
+----------
+## 4. 🧪 Testing Standards
+
+-   Use  **xUnit**  for unit testing.
+-   Test method names should follow:  `MethodName_StateUnderTest_ExpectedBehavior`
+    --   Example:  `GetUserById_UserExists_ReturnsUser`
+-   Use mocking frameworks like  **Moq**  for dependencies.
+-   Keep tests isolated and deterministic.
+
+----------
+## 5. ⚠️ Error Handling
+
+-   Avoid catching general exceptions (`catch (Exception)`).
+-   Use specific exception types.
+-   Always log exceptions using  `ILogger<T>`.
+-   Never swallow exceptions silently.
+
+----------
+
+## 6. 🧵 Async/Await
+
+-   Use  `async`/`await`  for all I/O-bound operations.
+-   Avoid  `async void`  except for event handlers.
+-   Always return  `Task`  or  `Task<T>`.
+
+----------
+
+## 7. 🧰 Dependency Injection (DI) Pattern
+
+-   Use constructor injection for all dependencies.
+-   Avoid service locator pattern.
+-   Register services with appropriate lifetimes (`Scoped`,  `Singleton`,  `Transient`).
+-   Prefer interfaces for abstractions.
+-   Use  `TryAdd`  methods to avoid duplicate registrations.
+
+----------
+
+## 8. 🧹 Clean Code Practices
+
+-   Keep methods short and focused (ideally under 30 lines).
+-   Avoid magic strings and numbers—use constants or enums.
+-   Prefer composition over inheritance.
+-   Use meaningful names—avoid abbreviations.
+
+----------
+
+## 9. 🪵 Logging
+
+-   Use structured logging with  `ILogger<T>`.
+-   Avoid logging sensitive data.
+-   Use log levels appropriately:  `Information`,  `Warning`,  `Error`,  `Critical`.
+
+----------
+
+## 10. 🧯 Nullability & Defensive Coding
+
+-   Enable nullable reference types (`<Nullable>enable</Nullable>`  in  `.csproj`).
+-   Use null-coalescing (`??`) and null-conditional (`?.`) operators.
+-   Validate method arguments with  `ArgumentNullException.ThrowIfNull()`.
+
+----------
+
+## 11. 🧪 Code Reviews
+
+-   All code must go through peer review.
+-   Reviewers should check for:
+    -   Adherence to this standard
+    -   Readability and maintainability
+    -   Test coverage
+    -   Security and performance concerns
+
+----------
+
+## 12. 🗂 Feature Folders
+
+Organize code by feature, not by layer. Each feature folder should contain:
+
+```
+/Features/Orders/Create
+    ├── CreateOrderRequest.cs
+    ├── CreateOrderEndpoint.cs
+    ├── CreateOrderResponse.cs
+    ├── CreateOrderValidator.cs
+    ├── CreateOrderHandler.cs
+
+```
+
+Benefits:
+
+-   Improves modularity and discoverability.
+-   Reduces cross-feature coupling.
+-   Aligns with vertical slicing and REPR pattern.
+
+----------
+
+## 13. 🔁 REPR Pattern (Request-Endpoint-Response)
+
+Use the REPR pattern to structure endpoints:
+
+-   **Request**: DTO representing input data.
+-   **Endpoint**: Defines route, DI, and orchestration logic.
+-   **Response**: DTO representing output data.
+ ```csharp
+public class CreateOrderRequest
+{
+	public string ProductId { get; set; }
+	public int Quantity { get; set; }
+}
+
+public class CreateOrderResponse
+{
+	public Guid OrderId { get; set; }
+	public string Status { get; set; }
+}
+ ```
+
+- Use FastEndpoints to wire them together cleanly.
+### 🚦 Response Handling Guidelines
+
+-   **Only the Endpoint layer is allowed to return HTTP responses**  (e.g.,  `NotFound`,  `BadRequest`,  `Created`, etc.).
+-   **Services and Repositories must never return HTTP-specific types**  like  `IResult`,  `ActionResult`, or  `HttpResponseMessage`.
+-   Instead, services should return:
+    -   Domain models
+    -   Result objects (e.g.,  `Result<T>`,  `OperationOutcome`)
+    -   Exceptions (to be caught and translated at the endpoint level)
+
+**✅ Correct:**
+```csharp
+// In Endpoint
+if (!result.IsSuccess)
+return Results.BadRequest(result.ErrorMessage);
+```
+---
+**❌ Incorrect:**
+```csharp
+// In Service
+return Results.BadRequest("Invalid order"); // ❌ Do not do this
+```
+---
+This separation ensures:
+-   Clear layering and testability
+-   Framework-agnostic service and repository layers
+-   Centralized response formatting and error handling
+
+
+----------
+
+## 14. 🗃 Repository Pattern
+
+-   Define interfaces for data access logic.
+-   Implement repositories per aggregate root.
+-   Avoid leaking EF Core-specific types outside repository.
+-   Use Unit of Work if multiple repositories need coordination.
+
+----------
+
+## 15. 📎 Tools & Analyzers
+
+-   Use Roslyn analyzers and StyleCop for static analysis.
+-   Enable warnings as errors in CI builds.
+-   Use  `dotnet format`  or IDE formatting tools before committing.
+
+----------
+
+## 16. 📚 References
+
+-   https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
+-   https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis
+-   https://fast-endpoints.com/docs
