@@ -91,12 +91,12 @@ Documentaion_Root
 
 > Purpose: Captures all architectural views and models of the application.
 > 
-- **HighLevel_Architecture/***Overview diagrams showing major components, data flow, and system boundaries.Example: `OAB_HighLevel_Architecture_v3.0.drawio`*
-- **Solution_Architecture/***Detailed solution design aligned with enterprise architecture standards.Example: `OAB_Solution_Architecture_SAP_Integration.pdf`*
-- **System_Context_Diagrams/***Diagrams showing how the app interacts with external systems/users.Example: `OAB_Context_Diagram_v2.1.png`*
-- **Component_Diagrams/***Breakdown of internal components/modules and their relationships.Example: `OAB_Component_Model_v3.2.uml`*
-- **Deployment_Diagrams/***Infrastructure and hosting layout (on-prem, cloud, hybrid).Example: `OAB_Azure_Deployment_2025.bpmn`*
-- **Integration_Architecture/***Interfaces, APIs, and data exchange mechanisms with other systems.Example: `OAB_to_SAP_Integration_Design.md`*
+- **HighLevel_Architecture/** *Overview diagrams showing major components, data flow, and system boundaries. Example: `OAB_HighLevel_Architecture_v3.0.drawio`*
+- **Solution_Architecture/** *Detailed solution design aligned with enterprise architecture standards. Example: `OAB_Solution_Architecture_SAP_Integration.pdf`*
+- **System_Context_Diagrams/** *Diagrams showing how the app interacts with external systems/users. Example: `OAB_Context_Diagram_v2.1.png`*
+- **Component_Diagrams/** *Breakdown of internal components/modules and their relationships. Example: `OAB_Component_Model_v3.2.uml`*
+- **Deployment_Diagrams/** *Infrastructure and hosting layout (on-prem, cloud, hybrid). Example: `OAB_Azure_Deployment_2025.bpmn`*
+- **Integration_Architecture/** *Interfaces, APIs, and data exchange mechanisms with other systems. Example: `OAB_to_SAP_Integration_Design.md`*
     
     ---
     
@@ -105,12 +105,12 @@ Documentaion_Root
 
 > Purpose: Captures detailed design artifacts and decisions.
 > 
-- **UI_UX_Designs/***Wireframes, mockups, and user flow diagrams.Example: `OAB_UI_Wireframes_FrontDesk.pdf`*
-- **Database_Designs/***ERDs, schema definitions, and indexing strategies.Example: `OAB_DB_Schema_v3.1.sql`*
-- **API_Specifications/***OpenAPI/Swagger specs, request/response models.Example: `OAB_AppointmentAPI_Spec.yaml`*
-- **Sequence_Diagrams/***Interaction flows between components or systems.Example: `OAB_BookingFlow_Sequence.drawio`*
-- **Class_Diagrams/***Object-oriented models for core business logic.Example: `OAB_DomainModel_Classes.uml`*
-- **Design_Decisions/***ADR (Architecture Decision Records) or rationale for key choices.Example: `ADR-003-Use-Azure-Functions.md`*
+- **UI_UX_Designs/** *Wireframes, mockups, and user flow diagrams. Example: `OAB_UI_Wireframes_FrontDesk.pdf`*
+- **Database_Designs/** *ERDs, schema definitions, and indexing strategies. Example: `OAB_DB_Schema_v3.1.sql`*
+- **API_Specifications/** *OpenAPI/Swagger specs, request/response models. Example: `OAB_AppointmentAPI_Spec.yaml`*
+- **Sequence_Diagrams/** *Interaction flows between components or systems. Example: `OAB_BookingFlow_Sequence.drawio`*
+- **Class_Diagrams/** *Object-oriented models for core business logic. Example: `OAB_DomainModel_Classes.uml`*
+- **Design_Decisions/** *ADR (Architecture Decision Records) or rationale for key choices. Example: `ADR-003-Use-Azure-Functions.md`*
 
 ---
 
@@ -118,11 +118,11 @@ Documentaion_Root
 
 > Purpose: Development standards, reusable code, and pipelines.
 > 
-- **Coding_Standards/***Language-specific guidelines (e.g., C#, JavaScript).Example: `CSharp_Coding_Standards.md`*
-- **Framework_Guidelines/***How to use internal frameworks or libraries.Example: `OAB_MVC_Framework_Guide.pdf`*
-- **Naming_Conventions/***Standards for naming files, variables, APIs, etc.Example: `OAB_Naming_Conventions.md`*
-- **Code_Snippets/***Reusable code blocks or patterns.Example: `LoggingMiddleware.cs`*
-- **DevOps_Pipelines/***CI/CD pipeline definitions and YAML files.Example: `azure-pipelines-oab.yml`*
+- **Coding_Standards/** *Language-specific guidelines (e.g., C#, JavaScript). Example: `CSharp_Coding_Standards.md`*
+- **Framework_Guidelines/** *How to use internal frameworks or libraries. Example: `OAB_MVC_Framework_Guide.pdf`*
+- **Naming_Conventions/** *Standards for naming files, variables, APIs, etc. Example: `OAB_Naming_Conventions.md`*
+- **Code_Snippets/** *Reusable code blocks or patterns. Example: `LoggingMiddleware.cs`*
+- **DevOps_Pipelines/** *CI/CD pipeline definitions and YAML files. Example: `azure-pipelines-oab.yml`*
 
 ---
 
@@ -130,11 +130,11 @@ Documentaion_Root
 
 > Purpose: Captures business and system requirements.
 > 
-- **Business_Requirements/***High-level goals, business rules, and stakeholder needs.Example: `OAB_Business_Requirements_v1.0.docx`*
-- **Functional_Requirements/***Detailed features and expected behaviors.Example: `OAB_Functional_Requirements.xlsx`*
-- **NonFunctional_Requirements/***Performance, scalability, availability, etc.Example: `OAB_NFRs_Security_Performance.md`*
-- **Use_Cases/***User interactions and system responses.Example: `OAB_UseCase_CheckIn.md`*
-- **User_Stories/***Agile stories with acceptance criteria.Example: `US-1023-BookAppointment.feature`*
+- **Business_Requirements/** *High-level goals, business rules, and stakeholder needs. Example: `OAB_Business_Requirements_v1.0.docx`*
+- **Functional_Requirements/** *Detailed features and expected behaviors. Example: `OAB_Functional_Requirements.xlsx`*
+- **NonFunctional_Requirements/** *Performance, scalability, availability, etc. Example: `OAB_NFRs_Security_Performance.md`*
+- **Use_Cases/** *User interactions and system responses. Example: `OAB_UseCase_CheckIn.md`*
+- **User_Stories/** *Agile stories with acceptance criteria. Example: `US-1023-BookAppointment.feature`*
 
 ---
 
@@ -142,11 +142,11 @@ Documentaion_Root
 
 > Purpose: All testing-related documentation and assets.
 > 
-- **Test_Plans/***Overall testing strategy and scope.Example: `OAB_TestPlan_v3.0.docx`*
-- **Test_Cases/***Detailed test scenarios and expected results.Example: `OAB_TestCases_RegressionSuite.xlsx`*
-- **Test_Reports/***Execution results, defect summaries.Example: `OAB_TestReport_Sprint12.pdf`*
-- **Automation_Scripts/***Selenium, Postman, or xUnit test scripts.Example: `OAB_API_Tests.postman_collection.json`*
-- **Performance_Testing/***Load test plans, JMeter scripts, results.Example: `OAB_LoadTest_Results_2025.csv`*
+- **Test_Plans/** *Overall testing strategy and scope. Example: `OAB_TestPlan_v3.0.docx`*
+- **Test_Cases/** *Detailed test scenarios and expected results. Example: `OAB_TestCases_RegressionSuite.xlsx`*
+- **Test_Reports/** *Execution results, defect summaries. Example: `OAB_TestReport_Sprint12.pdf`*
+- **Automation_Scripts/** *Selenium, Postman, or xUnit test scripts. Example: `OAB_API_Tests.postman_collection.json`*
+- **Performance_Testing/** *Load test plans, JMeter scripts, results. Example: `OAB_LoadTest_Results_2025.csv`*
 
 ---
 
@@ -154,10 +154,10 @@ Documentaion_Root
 
 > Purpose: Guides and artifacts for deploying the application.
 > 
-- **Deployment_Guides/***Step-by-step deployment instructions.Example: `OAB_Prod_Deployment_Guide.md`*
-- **Environment_Details/***Config settings, URLs, credentials (secured).Example: `OAB_Dev_Env_Config.json`*
-- **Release_Notes/***What’s new, fixed, or changed in each release.Example: `ReleaseNotes_v3.2.md`*
-- **Rollback_Plans/***Steps to revert to a previous version.Example: `OAB_Rollback_v3.1_to_v3.0.docx`*
+- **Deployment_Guides/** *Step-by-step deployment instructions. Example: `OAB_Prod_Deployment_Guide.md`*
+- **Environment_Details/** *Config settings, URLs, credentials (secured). Example: `OAB_Dev_Env_Config.json`*
+- **Release_Notes/** *What’s new, fixed, or changed in each release. Example: `ReleaseNotes_v3.2.md`*
+- **Rollback_Plans/** *Steps to revert to a previous version. Example: `OAB_Rollback_v3.1_to_v3.0.docx`*
 
 ---
 
@@ -165,10 +165,10 @@ Documentaion_Root
 
 > Purpose: Security posture, assessments, and compliance.
 > 
-- **Threat_Modeling/***Diagrams and analysis of potential threats.Example: `OAB_Threat_Modeling_MITRE.pdf`*
-- **Security_Standards/***Encryption, authentication, and access control policies.Example: `OAB_Security_Standards.md`*
-- **Vulnerability_Assessments/***Scan results and remediation plans.Example: `OAB_VulnScan_Q2_2025.pdf`*
-- **Penetration_Test_Reports/***External/internal pen test results.Example: `OAB_PenTest_Report_2025.docx`*
+- **Threat_Modeling/** *Diagrams and analysis of potential threats. Example: `OAB_Threat_Modeling_MITRE.pdf`*
+- **Security_Standards/** *Encryption, authentication, and access control policies. Example: `OAB_Security_Standards.md`*
+- **Vulnerability_Assessments/** *Scan results and remediation plans. Example: `OAB_VulnScan_Q2_2025.pdf`*
+- **Penetration_Test_Reports/** *External/internal pen test results. Example: `OAB_PenTest_Report_2025.docx`*
 
 ---
 
@@ -176,10 +176,10 @@ Documentaion_Root
 
 > Purpose: Day-to-day operational support documentation.
 > 
-- **Monitoring_Guides/***How to monitor app health and alerts.Example: `OAB_Monitoring_AzureAppInsights.md`*
-- **Logging_Strategies/***Log formats, retention, and analysis.Example: `OAB_Logging_Strategy.md`*
-- **Incident_Management/***Runbooks for handling outages or issues.Example: `OAB_Incident_Response_Playbook.pdf`*
-- **Backup_Recovery/***Backup schedules and recovery procedures.Example: `OAB_Backup_Recovery_Guide.docx`*
+- **Monitoring_Guides/** *How to monitor app health and alerts. Example: `OAB_Monitoring_AzureAppInsights.md`*
+- **Logging_Strategies/** *Log formats, retention, and analysis. Example: `OAB_Logging_Strategy.md`*
+- **Incident_Management/** *Runbooks for handling outages or issues. Example: `OAB_Incident_Response_Playbook.pdf`*
+- **Backup_Recovery/** *Backup schedules and recovery procedures. Example: `OAB_Backup_Recovery_Guide.docx`*
 
 ---
 
@@ -187,9 +187,9 @@ Documentaion_Root
 
 > Purpose: Tracks changes, approvals, and impact assessments.
 > 
-- **Change_Requests/***Formal change request forms.Example: `CR-2025-014-OAB-SSO-Update.docx`*
-- **Impact_Assessments/***Analysis of how changes affect systems/users.Example: `OAB_SAP_Integration_Impact.md`*
-- **Approval_Records/***Sign-offs from stakeholders or CAB.Example: `OAB_Change_Approval_Signoff.pdf`*
+- **Change_Requests/** *Formal change request forms. Example: `CR-2025-014-OAB-SSO-Update.docx`*
+- **Impact_Assessments/** *Analysis of how changes affect systems/users. Example: `OAB_SAP_Integration_Impact.md`*
+- **Approval_Records/** *Sign-offs from stakeholders or CAB. Example: `OAB_Change_Approval_Signoff.pdf`*
 
 ---
 
@@ -197,7 +197,7 @@ Documentaion_Root
 
 > Purpose: Supporting materials and external references.
 > 
-- **Glossary/***Definitions of domain-specific terms.Example: `OAB_Glossary.md`*
-- **Acronyms/***List of acronyms used in documentation.Example: `OAB_Acronyms_List.xlsx`*
-- **External_Links/***Links to vendor docs, APIs, or standards.Example: `OAB_External_References.md`*
-- **Tooling_Documentation/***Docs for tools used in the app (e.g., Swagger, Terraform).Example: `OAB_Terraform_Setup_Guide.md`*
+- **Glossary/** *Definitions of domain-specific terms. Example: `OAB_Glossary.md`*
+- **Acronyms/** *List of acronyms used in documentation. Example: `OAB_Acronyms_List.xlsx`*
+- **External_Links/** *Links to vendor docs, APIs, or standards. Example: `OAB_External_References.md`*
+- **Tooling_Documentation/** *Docs for tools used in the app (e.g., Swagger, Terraform). Example: `OAB_Terraform_Setup_Guide.md`*
